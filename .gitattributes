@@ -1,0 +1,2 @@
+dogs_2019.csv filter=lfs diff=lfs merge=lfs -text
+cats_2019.csv filter=lfs diff=lfs merge=lfs -text
