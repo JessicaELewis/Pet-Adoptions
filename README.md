@@ -1,6 +1,8 @@
 # Pet Adoption Prediction
 **Can we predict how long a cat or dog will be available for adoption before they find their forever home?**
 
+I focused on the cities in King County, Washington for 2 reasons: 1. Using the whole country or world was too much. 2. I live here.
+
 ## Data
 
 <ul>
@@ -34,15 +36,17 @@
 **Dependent Variable: duration_as_adoptable**
 
 First, I wrote out a few questions and found the answers in the data:
-<ul>
-    <li>**Q:** Do larger cities have faster average adoption rates?<br />
-        **A:** The size of a city doesn't have as strong a correlation to adoption rates as I expected</li>
-    <li>**Q:** Does average age of the city's human population affect adoption rates?<br />
-        **A:** Average age of humans is not a good indicator of pet adoption rate</li>
-    <li>**Q:** What are the most adopetd breeds?<br />
-        **Cats:** Domestic Shorthair<br />
-        **Dogs:** Chihuahua</li>
-</ul>
+
+**Q:** Do larger cities have faster average adoption rates?<br />
+    **A:** The size of a city doesn't have as strong a correlation to adoption rates as I expected
+
+**Q:** Does average age of the city's human population affect adoption rates?<br />
+    **A:** Average age of humans is not a good indicator of pet adoption rate
+
+**Q:** What are the most adopetd breeds?<br />
+    **Cats:** Domestic Shorthair<br />
+    **Dogs:** Chihuahua
+
 
 ## Feature Selection
 
