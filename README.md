@@ -1,12 +1,53 @@
-# Pet-Adoptions
-Capstone Two in Springboard's Data Science Career Track
+# Pet Adoption Prediction
+**Can we predict how long a cat or dog will be available for adoption before they find their forever home?**
 
-## Petfinder API
+## Data
 
-Petfinder API Key and Secret Key saved to local bash profile
-https://www.petfinder.com/user/developer-settings/
-There is a Daily limit of 1000 requests. Because of this, running through Step 1 may take up to 3 days.
+<ul>
+    <li>[Petfinder API](https://www.petfinder.com/user/developer-settings/)</li>
+    <li>US Census - Demographics for cities in King County Washington</li>
+</ul>
 
-## NOTE
 
-I'm submitting this project as-is with the intention of coming back and doing more machine learning and analysis after completing the machine learning units. 
+## Data cleaning
+
+<ul>
+    <li>Cats and dogs are processed separately. Each step had to be completed for each species.</li>
+    <li>Made a function for preprocessing the data that can be used for future data that will be used for predictions as well as for the training/testing.
+        <ul>
+            <li>Some columns in the dataset housed dicts. These were pulled out into their own columns.</li>
+            <li>Dropped unnecessary columns</li>
+            <li>Removed duplicates</li>
+        </ul>
+    </li>
+    <li>Each record included the ID of the organization that is responsible for the animal. I grabbed the org's city using the API's organization call and replaced the IDs with their city name.</li>
+</ul>
+
+## Feature Engineering
+
+<ul>
+    <li>I subtracted 'published_at' from 'status_changed_at' to make a new column called 'duration_as_adoptable' to describe how long the animal was at the shelter before being adopted. This is the dependent variable.</li>
+</ul>
+
+## EDA
+
+**Dependent Variable: duration_as_adoptable**
+
+First, I wrote out a few questions and found the answers in the data:
+<ul>
+    <li>**Q:** Do larger cities have faster average adoption rates?<br />
+        **A:** The size of a city doesn't have as strong a correlation to adoption rates as I expected</li>
+    <li>**Q:** Does average age of the city's human population affect adoption rates?<br />
+        **A:** Average age of humans is not a good indicator of pet adoption rate</li>
+    <li>**Q:** What are the most adopetd breeds?<br />
+        **Cats:** Domestic Shorthair<br />
+        **Dogs:** Chihuahua</li>
+</ul>
+
+## Feature Selection
+
+
+
+## Machine learning models
+
+## Model selection and performance
