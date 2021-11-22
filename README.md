@@ -50,8 +50,39 @@ First, I wrote out a few questions and found the answers in the data:
 
 ## Feature Selection
 
+I tried three different methods for feature selection. Here are the features that were identified as the most important:
+
+**Dogs**
+<ul>
+    <li>RandomForest: house_trained, gender</li>
+    <li>XGBoost: spayed_neutered, coat, gender, goodwith_cats</li>
+    <li>f_regression: house_trained</li>    
+</ul>
+
+**Cats**
+<ul>
+    <li>RandomForest: gender</li>
+    <li>XGBoost: gender</li>
+    <li>f_regression: goodwith_cats, special_needs, house_trained</li>    
+</ul>
 
 
 ## Machine learning models
 
+I tested four models and assessed their performance on the data:
+<ul>
+    <li>RandomForestRegressor</li>
+    <li>GradientBoostingRegressor</li>
+    <li>KNeighborsRegressor</li>
+    <li>xgboost</li>
+</ul>
+
 ## Model selection and performance
+
+**Dogs**
+![Model Score Results for dogs](/assets/dogs_model-score-comparison.png)
+The four models performed similarly, but the Gradient Boosting Regressor ended up performing slightly better in the RMSE score for the test set.
+
+**Cats**
+![Model Score Results for cats](/assets/cats_model-score-comparison.png)
+Again, the models performed similarly but the KNeighborsRegressor performed slightly better than the others in the RMSE score for the test set.
