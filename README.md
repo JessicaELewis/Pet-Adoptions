@@ -1,9 +1,9 @@
 # Pet Adoption Prediction
 **Can we predict how long a cat or dog will be available for adoption before they find their forever home?**
 
-I focused on the cities in King County, Washington for 2 reasons: 
+I focused on the cities in Washington state for 2 reasons: 
 <ol>
-    <li>Using the whole country or world was too much. </li>
+    <li>Using the whole country or world was too much.</li>
     <li>I live here.</li>
 </ol>
 
