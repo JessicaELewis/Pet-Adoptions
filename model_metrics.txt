@@ -1,0 +1,40 @@
+DOGS
+
+Model: GradientBoostingRegressor
+
+Model features: 
+    -house_trained
+    -gender
+    -spayed_neutered
+    -coat
+    -goodwith_cats
+
+Hyperparameters: 
+    -'learning_rate': 0.1
+    -'max_depth': 2
+    -'n_estimators': 233
+
+Performance metrics: 
+    R^2: 0.097
+    RMSE (standardized): 0.943
+
+
+------------------------------
+CATS
+
+Model: KNeighborsRegressor
+
+Model features: 
+    -gender
+    -goodwith_cats
+    -special_needs
+    -house_trained
+
+Hyperparameters: 
+    -'n_neighbors': 88
+    -'p': 2
+    -'weights': 'uniform'
+
+Performance metrics: 
+    R^2: 0.02
+    RMSE (standardized): 0.979

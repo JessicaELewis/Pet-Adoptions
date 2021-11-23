@@ -1,12 +1,16 @@
 # Pet Adoption Prediction
 **Can we predict how long a cat or dog will be available for adoption before they find their forever home?**
 
-I focused on the cities in King County, Washington for 2 reasons: 1. Using the whole country or world was too much. 2. I live here.
+I focused on the cities in King County, Washington for 2 reasons: 
+<ol>
+    <li>Using the whole country or world was too much. </li>
+    <li>I live here.</li>
+</ol>
 
 ## Data
 
 <ul>
-    <li>[Petfinder API](https://www.petfinder.com/user/developer-settings/)</li>
+    <li>![Petfinder API](https://www.petfinder.com/user/developer-settings/)</li>
     <li>US Census - Demographics for cities in King County Washington</li>
 </ul>
 
@@ -80,9 +84,12 @@ I tested four models and assessed their performance on the data:
 ## Model selection and performance
 
 **Dogs**
-![Model Score Results for dogs](/assets/dogs_model-score-comparison.png)
-The four models performed similarly, but the Gradient Boosting Regressor ended up performing slightly better in the RMSE score for the test set.
+![Model Metrics for dogs](/assets/dogs_model_metrics.png)
+The four models performed similarly, but the **GradientBoostingRegressor** ended up performing slightly better in the RMSE score for the test set.
 
 **Cats**
-![Model Score Results for cats](/assets/cats_model-score-comparison.png)
-Again, the models performed similarly but the KNeighborsRegressor performed slightly better than the others in the RMSE score for the test set.
+![Model Metrics for cats](/assets/cats_model_metrics.png)
+Again, the models performed similarly but the **KNeighborsRegressor** performed slightly better than the others in the RMSE score for the test set.
+
+### Notes
+It's interesting to see that predictions for cats are generally more accurate. However, this isn't too surprising because the variance in the cat data is less than the variance seen in the dog data; less spread means less error.
