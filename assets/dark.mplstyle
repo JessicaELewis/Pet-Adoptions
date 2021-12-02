@@ -1,0 +1,24 @@
+font.size : 16
+text.color : FFFFFF
+
+axes.titlesize : 22
+axes.labelsize : 18
+xtick.labelsize : 16
+ytick.labelsize : 16
+
+axes.facecolor : 212121
+axes.titlecolor : FFFFFF
+axes.labelcolor : FFFFFF
+axes.edgecolor : FFFFFF
+xtick.labelcolor : FFFFFF
+ytick.labelcolor : FFFFFF
+xtick.color : FFFFFF
+ytick.color : FFFFFF
+
+legend.facecolor : k
+legend.edgecolor : w
+legend.fontsize : small
+legend.labelcolor : w
+legend.title_fontsize : small
+
+savefig.transparent : True
