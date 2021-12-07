@@ -85,11 +85,11 @@ I tested four models and assessed their performance on the data:
 
 ![Model Metrics for dogs](/assets/dogs_model_metrics.png)
 
-The four models performed similarly, but the **GradientBoostingRegressor** ended up performing slightly better in the RMSE score for the test set.
+The four models performed similarly, but the **XGBoost** ended up performing slightly better in the RMSE score for the test set.
 
 ![Model Metrics for cats](/assets/cats_model_metrics.png)
 
-Again, the models performed similarly but the **KNeighborsRegressor** performed slightly better than the others in the RMSE score for the test set.
+Again, the models performed similarly but the **GradientBoostingRegressor** performed slightly better than the others in the RMSE score for the test set.
 
 ### Notes
 It's interesting to see that predictions for cats are generally more accurate. However, this isn't too surprising because the variance in the cat data is less than the variance seen in the dog data; less spread means less error.
