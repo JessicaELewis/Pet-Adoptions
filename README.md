@@ -93,3 +93,12 @@ Again, the models performed similarly but the **GradientBoostingRegressor** perf
 
 ### Notes
 It's interesting to see that predictions for cats are generally more accurate. However, this isn't too surprising because the variance in the cat data is less than the variance seen in the dog data; less spread means less error.
+
+## Final Thoughts
+
+Improvements can definitely be made. Here are a few things I could try:
+<ul>
+    <li>Changing the dependent variable to date ranges, and therefore making it a classification problem</li>
+    <li>Include image processing instead of just flagging if a profile had an image or not</li>
+    <li>Use more local demographic data</li>
+</ul>
